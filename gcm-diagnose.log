@@ -1,0 +1,159 @@
+﻿Diagnose log at 2022-12-01T20:40:17Z
+
+Executable: /usr/local/share/gcm-core/git-credential-manager-core
+Version: 2.0.785+6074e4e3d3
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: macOS
+OSVersion: 12.5
+Reading environment variables... OK
+ Variables:
+XPC_SERVICE_NAME=0
+HOMEBREW_CELLAR=/opt/homebrew/Cellar
+USER=michaelmccullough
+PWD=/Users/michaelmccullough/mimccullough.github.io
+PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/opt/X11/bin
+TERM_PROGRAM_VERSION=445
+MANPATH=/opt/homebrew/share/man::
+LOGNAME=michaelmccullough
+TERM=xterm-256color
+SHELL=/bin/zsh
+OLDPWD=/Users/michaelmccullough
+TERM_SESSION_ID=8FC2126F-66EC-4D3B-8F7C-849FFC56E22A
+TMPDIR=/var/folders/hj/d97nhcy14v96vmzj91zc9hlc0000gn/T/
+DISPLAY=/private/tmp/com.apple.launchd.KqgQ8mEdE2/org.xquartz:0
+SHLVL=1
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.UdXxLRLxar/Listeners
+LANG=en_US.UTF-8
+HOME=/Users/michaelmccullough
+__CFBundleIdentifier=com.apple.Terminal
+_=/usr/local/bin/git-credential-manager-core
+HOMEBREW_PREFIX=/opt/homebrew
+HOMEBREW_REPOSITORY=/opt/homebrew
+INFOPATH=/opt/homebrew/share/info:
+__CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0
+XPC_FLAGS=0x0
+TERM_PROGRAM=Apple_Terminal
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is '/var/folders/hj/d97nhcy14v96vmzj91zc9hlc0000gn/T/'...
+Checking basic file I/O...
+Writing to temporary file '/var/folders/hj/d97nhcy14v96vmzj91zc9hlc0000gn/T/39a843d29f32b73e165590cf'... OK
+Reading from temporary file '/var/folders/hj/d97nhcy14v96vmzj91zc9hlc0000gn/T/39a843d29f32b73e165590cf'... OK
+Deleting temporary file '/var/folders/hj/d97nhcy14v96vmzj91zc9hlc0000gn/T/39a843d29f32b73e165590cf'... OK
+Testing IFileSystem instance...
+UserHomePath: /Users/michaelmccullough
+UserDataDirectoryPath: /Users/michaelmccullough/.gcm
+GetCurrentDirectory(): /Users/michaelmccullough/mimccullough.github.io
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking basic networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com... OK
+Sending HEAD request to https://example.com... OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:62036/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+Testing with IHttpClientFactory created HTTP client...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com... OK
+Sending HEAD request to https://example.com... OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:62038/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.32.1 (Apple Git-133)'
+Locating current repository... OK
+Git repository at '/Users/michaelmccullough/mimccullough.github.io/.git'
+Listing all Git configuration... OK
+Git configuration:
+file:/Library/Developer/CommandLineTools/usr/share/git-core/gitconfig	credential.helper=osxkeychain
+file:/Users/michaelmccullough/.gitconfig	credential.helper=
+file:/Users/michaelmccullough/.gitconfig	credential.helper=/usr/local/share/gcm-core/git-credential-manager-core
+file:/Users/michaelmccullough/.gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:/Users/michaelmccullough/.gitconfig	init.defaultbranch=main
+file:/Users/michaelmccullough/.gitconfig	user.name=mimccullough
+file:/Users/michaelmccullough/.gitconfig	user.email=michael.mccullough8147@gmail.com
+file:/Users/michaelmccullough/.gitconfig	github.user=mimccullough
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=true
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.ignorecase=true
+file:.git/config	core.precomposeunicode=true
+file:.git/config	remote.origin.url=https://mimccullough:Yekim8147%21@github.com/mimccullough/mimccullough.github.io.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config	branch.main.remote=origin
+file:.git/config	branch.main.merge=refs/heads/main
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker not supported.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: /Users/michaelmccullough/.local/.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: /Users/michaelmccullough/.local/.IdentityService/msal.cache
+MacKeyChainAccountName: MSALCache
+MacKeyChainServiceName: Microsoft.Developer.IdentityService
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+
